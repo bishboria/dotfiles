@@ -1,3 +1,5 @@
+set nocompatible
+
 filetype plugin indent on
 syntax on
 set number
@@ -9,8 +11,8 @@ set autoindent
 set expandtab
 
 " visuals
-set t_Co=256
 colorscheme macvim
+set t_Co=256
 set lines=56
 set columns=179
 
