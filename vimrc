@@ -11,7 +11,6 @@ set autoindent
 set expandtab
 
 " visuals
-colorscheme macvim
 set t_Co=256
 set lines=56
 set columns=179
@@ -31,3 +30,13 @@ nnoremap j gj
 nnoremap k gk
 
 let g:lisp_rainbow = 1
+
+" use vundle to manage plugins
+set rtp+=~/.vim/vundle.git/ 
+call vundle#rc()
+
+" slime for lisp/scheme
+Bundle "https://github.com/jpalardy/vim-slime.git"
+
+" Ruby refactoring tool
+Bundle "http://github.com/ecomba/vim-ruby-refactoring.git"
