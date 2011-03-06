@@ -12,8 +12,6 @@ set expandtab
 
 " visuals
 set t_Co=256
-set lines=56
-set columns=179
 
 " disable arrow keys
 nnoremap <up> <nop>
