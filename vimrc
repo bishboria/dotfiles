@@ -40,3 +40,6 @@ Bundle "https://github.com/jpalardy/vim-slime.git"
 
 " Ruby refactoring tool
 Bundle "http://github.com/ecomba/vim-ruby-refactoring.git"
+
+" Desert colour scheme
+Bundle "desert256.vim"
