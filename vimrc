@@ -41,3 +41,6 @@ Bundle "http://github.com/ecomba/vim-ruby-refactoring.git"
 
 " Desert colour scheme
 Bundle "desert256.vim"
+
+" This will work once BundleInstall is run
+colorscheme desert256
