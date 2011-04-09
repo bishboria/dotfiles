@@ -27,6 +27,7 @@ inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
+" make parens have alternating colours
 let g:lisp_rainbow = 1
 
 " use vundle to manage plugins
