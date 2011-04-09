@@ -1,4 +1,4 @@
-set guifont=DejaVu\ Sans\ Mono:h14
+set guifont=Monaco:h14
 set guioptions-=m
 set guioptions-=T
 set guioptions-=L

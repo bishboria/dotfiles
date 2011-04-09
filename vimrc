@@ -44,3 +44,5 @@ Bundle "desert256.vim"
 
 " This will work once BundleInstall is run
 colorscheme desert256
+
+Bundle "https://github.com/mhz/vim-matchit.git"
