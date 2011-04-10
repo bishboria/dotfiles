@@ -37,6 +37,9 @@ call vundle#rc()
 " slime for lisp/scheme
 Bundle "https://github.com/jpalardy/vim-slime.git"
 
+" extended % matching
+Bundle "https://github.com/mhz/vim-matchit.git"
+
 " Ruby refactoring tool
 Bundle "http://github.com/ecomba/vim-ruby-refactoring.git"
 
@@ -45,5 +48,3 @@ Bundle "desert256.vim"
 
 " This will work once BundleInstall is run
 colorscheme desert256
-
-Bundle "https://github.com/mhz/vim-matchit.git"
