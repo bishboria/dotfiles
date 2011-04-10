@@ -13,6 +13,18 @@ set expandtab
 " visuals
 set t_Co=256
 
+" can create new buffers without having to save first
+set hidden
+
+" turn off that infernal beeping.
+set vb
+
+" show status menu even if only 1 window
+set laststatus=2
+
+" show better command line completion
+set wildmenu
+
 " disable arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
