@@ -25,6 +25,9 @@ set laststatus=2
 " show better command line completion
 set wildmenu
 
+" show cursorline to find cursor better
+set cursorline
+
 " disable arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -60,3 +63,6 @@ Bundle "desert256.vim"
 
 " This will work once BundleInstall is run
 colorscheme desert256
+
+" Git wrapper in vim
+Bundle "https://github.com/tpope/vim-fugitive.git"
