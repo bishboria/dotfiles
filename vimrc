@@ -66,3 +66,6 @@ colorscheme desert256
 
 " Git wrapper in vim
 Bundle "https://github.com/tpope/vim-fugitive.git"
+
+" Add end keyword in ruby
+Bundle "https://github.com/tpope/vim-endwise.git"
