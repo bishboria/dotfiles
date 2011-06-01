@@ -1,7 +1,5 @@
 set nocompatible
 
-filetype plugin indent on
-syntax on
 set number
 set shiftwidth=2
 set softtabstop=2
@@ -61,11 +59,23 @@ Bundle "http://github.com/ecomba/vim-ruby-refactoring.git"
 " Desert colour scheme
 Bundle "desert256.vim"
 
-" This will work once BundleInstall is run
-colorscheme desert256
-
 " Git wrapper in vim
 Bundle "https://github.com/tpope/vim-fugitive.git"
 
 " Add end keyword in ruby
 Bundle "https://github.com/tpope/vim-endwise.git"
+
+" Solarized colour scheme
+Bundle "https://github.com/altercation/vim-colors-solarized.git"
+
+" CoffeeScript plugin for syntax highlighting and compiling
+Bundle "https://github.com/kchmck/vim-coffee-script.git"
+
+" NerdTree file explorer
+Bundle "https://github.com/scrooloose/nerdtree.git"
+
+" Leave at bottom so I can see what's in use.
+set background=light
+colorscheme solarized
+filetype plugin indent on
+syntax on
