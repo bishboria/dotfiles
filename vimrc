@@ -74,8 +74,12 @@ Bundle "https://github.com/kchmck/vim-coffee-script.git"
 " NerdTree file explorer
 Bundle "https://github.com/scrooloose/nerdtree.git"
 
+" VimWiki
+Bundle "https://github.com/vim-scripts/vimwiki.git"
+
 " Leave at bottom so I can see what's in use.
+syntax enable
+let g:solarized_termcolors=256
 set background=light
 colorscheme solarized
 filetype plugin indent on
-syntax on
