@@ -32,6 +32,14 @@ Bundle "https://github.com/scrooloose/nerdtree.git"
 " VimWiki
 Bundle "https://github.com/vim-scripts/vimwiki.git"
 
+" Rope.vim python refactoring tool
+Bundle "https://github.com/sontek/rope-vim.git"
+
+" Global replace
+Bundle "https://github.com/bishboria/vim-globalreplace.git"
+
+" Nerd Commenter
+Bundle "https://github.com/vim-scripts/The-NERD-Commenter.git"
 " End vundle bundles
 
 syntax on
@@ -82,3 +90,5 @@ let g:lisp_rainbow = 1
 " Leave at bottom so I can see what's in use.
 set background=light
 colorscheme solarized
+
+let mapleader = ","
