@@ -23,17 +23,11 @@ Bundle "https://github.com/tpope/vim-endwise.git"
 " Solarized colour scheme
 Bundle "https://github.com/altercation/vim-colors-solarized.git"
 
-" CoffeeScript plugin for syntax highlighting and compiling
-Bundle "https://github.com/kchmck/vim-coffee-script.git"
-
 " NerdTree file explorer
 Bundle "https://github.com/scrooloose/nerdtree.git"
 
 " VimWiki
 Bundle "https://github.com/vim-scripts/vimwiki.git"
-
-" Rope.vim python refactoring tool
-Bundle "https://github.com/sontek/rope-vim.git"
 
 " Global replace
 Bundle "https://github.com/bishboria/vim-globalreplace.git"
@@ -49,8 +43,8 @@ filetype indent on
 
 set number
 set smarttab
-autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
-autocmd FileType python set sw=4 sts=4 et
+autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 expandtab
+autocmd FileType python set sw=4 sts=4 expandtab
 
 " visuals
 set t_Co=256
