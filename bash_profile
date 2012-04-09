@@ -27,16 +27,19 @@ function parse_git_branch {
 function parse_git_stash {
 	local stash=$(git stash list 2> /dev/null | grep "WIP on $(parse_git_branch)" | sort -rn | head -n1)
 	stash=$(echo $stash | cut -d':' -f1)
-	[[ $stash != "" ]] && echo [stash : $stash]
+	[[ $stash != "" ]] && echo :stash
 }
 
 function git_prompt_info() {
 	ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-	echo "$(tput setaf 2)$(parse_git_dirty)$(tput bold) [git : $(parse_git_branch)]$(tput setaf 1)$(parse_git_stash)$(tput sgr0)"
+	echo "$(tput setaf 2)$(parse_git_dirty)$(tput bold):$(parse_git_branch)$(tput setaf 1)$(parse_git_stash)$(tput sgr0)"
 }
 
 function rvm_info() {
-	echo " : $(rvm current)"
+	local lines=$(cat .rvmrc 2> /dev/null) || return
+	[[ $lines > 0 ]] && echo ":$(rvm current)"
 }
 
-PS1='\[\033[01;32m\]\u@\h\[\033[00m\] : \[\033[01;34m\]\w\[\033[00m\]$(git_prompt_info)\[$(rvm_info)\]\n\[$(tput bold)$(tput setaf 3)\]>\[$(tput sgr0)\] '
+PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]$(git_prompt_info)\[$(rvm_info)\] \[$(tput bold)$(tput setaf 3)\]>\[$(tput sgr0)\] '
+
+source ~/.git_completion

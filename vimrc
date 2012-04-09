@@ -43,7 +43,7 @@ filetype indent on
 
 set number
 set smarttab
-autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 expandtab
+autocmd FileType sh,ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 expandtab
 autocmd FileType python set sw=4 sts=4 expandtab
 
 " visuals
@@ -86,3 +86,4 @@ set background=light
 colorscheme solarized
 
 let mapleader = ","
+map <leader>w :w\|!git add . && git commit -m "."<CR><CR>
