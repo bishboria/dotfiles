@@ -86,4 +86,5 @@ set background=light
 colorscheme solarized
 
 let mapleader = ","
+" Autocommit on save mapping
 map <leader>w :w\|!git add . && git commit -m "."<CR><CR>
