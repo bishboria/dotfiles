@@ -2,17 +2,14 @@ set nocompatible
 filetype off " required!
 
 " use vundle to manage plugins
-set rtp+=~/.vim/vundle.git/ 
+set rtp+=~/.dotfiles/vundle.git/ 
 call vundle#rc()
 
 " slime for lisp/scheme
 Bundle "https://github.com/jpalardy/vim-slime.git"
 
 " extended % matching
-Bundle "https://github.com/mhz/vim-matchit.git"
-
-" Ruby refactoring tool
-Bundle "http://github.com/ecomba/vim-ruby-refactoring.git"
+Bundle "https://github.com/tsaleh/vim-matchit.git"
 
 " Git wrapper in vim
 Bundle "https://github.com/tpope/vim-fugitive.git"
@@ -29,9 +26,6 @@ Bundle "https://github.com/scrooloose/nerdtree.git"
 " VimWiki
 Bundle "https://github.com/vim-scripts/vimwiki.git"
 
-" Global replace
-Bundle "https://github.com/bishboria/vim-globalreplace.git"
-
 " Nerd Commenter
 Bundle "https://github.com/vim-scripts/The-NERD-Commenter.git"
 " End vundle bundles
@@ -43,7 +37,8 @@ filetype indent on
 
 set number
 set smarttab
-autocmd FileType sh,ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 expandtab
+autocmd FileType sh,ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai ts=2 sw=2 sts=2 expandtab
+autocmd FileType haskell set ai ts=4 sw=4 sts=4 expandtab
 autocmd FileType python set sw=4 sts=4 expandtab
 
 " visuals
@@ -79,6 +74,7 @@ nnoremap j gj
 nnoremap k gk
 
 " make parens have alternating colours
+" good for lisp beginners... Don't have much use for it now.
 let g:lisp_rainbow = 1
 
 " Leave at bottom so I can see what's in use.
@@ -86,5 +82,5 @@ set background=light
 colorscheme solarized
 
 let mapleader = ","
-" Autocommit on save mapping
-map <leader>w :w\|!git add . && git commit -m "."<CR><CR>
+" Strip trailing whitespace and autocommit on save mapping
+map <leader>w :%s/\s\+$//e\|w\|!git add . && git commit -m "."<CR><CR>

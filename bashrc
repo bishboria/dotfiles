@@ -1,4 +1,5 @@
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=/usr/local/git/bin:$PATH # Add git to PATH
 
 hitch() {
 	command hitch "$@"
@@ -10,8 +11,6 @@ alias unhitch='hitch -u'
 alias mvim='mvim -v'
 alias ls='ls -alG'
 
-export NODE_PATH=/usr/local/lib/node_modules
-PATH=/usr/local/sbin:/usr/local/bin:/usr/local/git/bin:$PATH
 export EDITOR=vim
 export GIT_EDITOR=vim
 
@@ -41,5 +40,3 @@ function rvm_info() {
 }
 
 PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]$(git_prompt_info)\[$(rvm_info)\] \[$(tput bold)$(tput setaf 3)\]>\[$(tput sgr0)\] '
-
-source ~/.git_completion

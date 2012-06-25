@@ -1,0 +1,10 @@
+[user]
+	name = Stuart Gale
+	email = bishboria@gmail.com
+[core]
+	excludesfile = /Users/bishboria/.gitignore
+[color]
+	ui = true
+[alias]
+	st = status
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
