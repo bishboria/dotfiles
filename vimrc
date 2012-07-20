@@ -38,7 +38,7 @@ filetype indent on
 set number
 set smarttab
 autocmd FileType sh,ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai ts=2 sw=2 sts=2 expandtab
-autocmd FileType haskell set ai ts=4 sw=4 sts=4 expandtab
+autocmd FileType haskell,lhaskell set ai ts=4 sw=4 sts=4 expandtab
 autocmd FileType python set sw=4 sts=4 expandtab
 
 " visuals
