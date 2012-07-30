@@ -59,6 +59,9 @@ set wildmenu
 " show cursorline to find cursor better
 set cursorline
 
+" try to avoid going over 80 chars per line.
+set colorcolumn=80
+
 " disable arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
