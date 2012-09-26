@@ -20,12 +20,6 @@ Bundle "https://github.com/tpope/vim-endwise.git"
 " Solarized colour scheme
 Bundle "https://github.com/altercation/vim-colors-solarized.git"
 
-" NerdTree file explorer
-Bundle "https://github.com/scrooloose/nerdtree.git"
-
-" VimWiki
-Bundle "https://github.com/vim-scripts/vimwiki.git"
-
 " Nerd Commenter
 Bundle "https://github.com/vim-scripts/The-NERD-Commenter.git"
 " End vundle bundles
@@ -62,6 +56,8 @@ set cursorline
 " try to avoid going over 80 chars per line.
 set colorcolumn=80
 
+set noswapfile
+
 " disable arrow keys
 nnoremap <up> <nop>
 nnoremap <down> <nop>
@@ -85,5 +81,10 @@ set background=light
 colorscheme solarized
 
 let mapleader = ","
+
+" show trailing spaces
+set listchars=tab:->,trail:·,extends:>
+set list!
+"
 " Strip trailing whitespace and autocommit on save mapping
 map <leader>w :%s/\s\+$//e\|w\|!git add . && git commit -m "."<CR><CR>
