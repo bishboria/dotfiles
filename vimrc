@@ -22,6 +22,9 @@ Bundle "https://github.com/altercation/vim-colors-solarized.git"
 
 " Nerd Commenter
 Bundle "https://github.com/vim-scripts/The-NERD-Commenter.git"
+
+" Haskell Template Syntax
+Bundle "https://github.com/pbrisbin/html-template-syntax.git"
 " End vundle bundles
 
 syntax on

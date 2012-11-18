@@ -10,9 +10,18 @@ alias unhitch='hitch -u'
 alias mvim='mvim -v'
 alias vim='mvim'
 alias ls='ls -alG'
+alias tmux="TERM=screen-256color-bce tmux"
+
+export HISTCONTROL=ignoredups
+unset  HISTFILESIZE
 
 export EDITOR=vim
 export GIT_EDITOR=vim
+export DYLD_LIBRARY_PATH=/opt/oracle/instantclient_10_2
+export ORACLE_HOME=/opt/oracle/instantclient_10_2
+export ORACLE_SID=asdb
 
+PATH=/usr/local/mysql/bin:$PATH
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/Library/Haskell/bin
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-tmux -S /var/tmux/pairing new-session -d -s pairing -n vim\/GHCi 'bash -c "vim; bash"'
-tmux -S /var/tmux/pairing split-window -h 'bash -c "ghci; bash"'
+tmux -S /var/tmux/pairing new-session -d -s pairing -n vim 'bash -c "vim; bash"'
+tmux -S /var/tmux/pairing new-window -t pairing -n ghci 'ghci'
 tmux -S /var/tmux/pairing new-window -t pairing -n git  'bash'
 tmux -S /var/tmux/pairing select-window -t pairing:0
 tmux -S /var/tmux/pairing -2 attach -t pairing
