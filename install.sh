@@ -7,6 +7,9 @@ ln -s ~/.dotfiles/gvimrc ~/.gvimrc
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/gitignore ~/.gitignore
 
+ln -s ~/.dotfiles/gemrc ~/.gemrc
+ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
+
 ln -s ~/.dotfiles/tmux-haskell /usr/local/bin/tmux-haskell
 ln -s ~/.dotfiles/tmux-ruby /usr/local/bin/tmux-ruby
 ln -s ~/.dotfiles/tmux-rails /usr/local/bin/tmux-rails
