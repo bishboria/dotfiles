@@ -12,3 +12,5 @@ ln -s ~/.dotfiles/tmux-ruby /usr/local/bin/tmux-ruby
 ln -s ~/.dotfiles/tmux-rails /usr/local/bin/tmux-rails
 ln -s ~/.dotfiles/tmux-attach /usr/local/bin/tmux-attach
 ln -s ~/.dotfiles/tmux-stop /usr/local/bin/tmux-stop
+
+vim +BundleInstall +qa
