@@ -6,5 +6,5 @@
 [color]
 	ui = true
 [alias]
-	st = status
+	st = status --untracked-files=all
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short

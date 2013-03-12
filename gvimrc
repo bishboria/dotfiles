@@ -1,4 +1,4 @@
-set guifont=Monaco:h14
+set guifont=Andale\ Mono:h19
 set guioptions-=m
 set guioptions-=T
 set guioptions-=L

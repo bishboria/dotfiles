@@ -21,7 +21,7 @@ export ORACLE_HOME=/opt/oracle/instantclient_10_2
 export ORACLE_SID=asdb
 
 PATH=/usr/local/mysql/bin:$PATH
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 PATH=$HOME/Library/Haskell/bin:$PATH
 PATH=$HOME/.cabal/bin:$PATH
 PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
