@@ -2,7 +2,7 @@ set nocompatible
 filetype off " required!
 
 " use vundle to manage plugins
-set rtp+=~/.dotfiles/vundle.git/ 
+set rtp+=~/.dotfiles/vundle.git/
 call vundle#rc()
 
 " slime for lisp/scheme

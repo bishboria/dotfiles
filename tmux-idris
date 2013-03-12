@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+tmux -S /var/tmux/pairing new-session -d -s pairing -n vim 'mvim -v'
+tmux -S /var/tmux/pairing new-window -t pairing -n idris 'idris'
+tmux -S /var/tmux/pairing new-window -t pairing -n git  'bash'
+tmux -S /var/tmux/pairing select-window -t pairing:0
+tmux -S /var/tmux/pairing -2 attach -t pairing
+
