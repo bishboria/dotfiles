@@ -17,4 +17,6 @@ ln -s ~/.dotfiles/tmux-attach /usr/local/bin/tmux-attach
 ln -s ~/.dotfiles/tmux-stop /usr/local/bin/tmux-stop
 ln -s ~/.dotfiles/tmux-idris /usr/local/bin/tmux-idris
 
+ln -s ~/.dotfiles/emacs /usr/local/bin/emacs
+
 vim +BundleInstall +qa
