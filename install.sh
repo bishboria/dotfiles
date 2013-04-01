@@ -18,5 +18,6 @@ ln -s ~/.dotfiles/tmux-stop /usr/local/bin/tmux-stop
 ln -s ~/.dotfiles/tmux-idris /usr/local/bin/tmux-idris
 
 ln -s ~/.dotfiles/emacs /usr/local/bin/emacs
+ln -s ~/.dotfiles/.emacs ~/.emacs
 
 vim +BundleInstall +qa

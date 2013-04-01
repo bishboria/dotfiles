@@ -16,10 +16,9 @@ unset  HISTFILESIZE
 
 export EDITOR=vim
 export GIT_EDITOR=vim
-export DYLD_LIBRARY_PATH=/opt/oracle/instantclient_10_2
-export ORACLE_HOME=/opt/oracle/instantclient_10_2
-export ORACLE_SID=asdb
+export PGHOME=/usr/local/ProofGeneral
 
+PATH=/usr/local/ProofGeneral/bin:$PATH
 PATH=/usr/local/mysql/bin:$PATH
 PATH=$HOME/.rvm/bin:$PATH # Add RVM to PATH for scripting
 PATH=$HOME/Library/Haskell/bin:$PATH
