@@ -5,8 +5,7 @@ filetype off " required!
 set rtp+=~/.dotfiles/vundle.git/
 call vundle#rc()
 
-" slime for lisp/scheme
-Bundle "https://github.com/jpalardy/vim-slime.git"
+Bundle "https://github.com/gmarik/vundle"
 
 " extended % matching
 Bundle "https://github.com/tsaleh/vim-matchit.git"
@@ -31,6 +30,9 @@ Bundle "https://github.com/jvoorhis/coq.vim.git"
 
 " Idris
 Bundle "https://github.com/jhenahan/idris-vim.git"
+
+" tslime
+Bundle "https://github.com/jgdavey/tslime.vim"
 " End vundle bundles
 
 syntax on
