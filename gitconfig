@@ -2,7 +2,7 @@
 	name = Stuart Gale
 	email = bishboria@gmail.com
 [core]
-	excludesfile = /Users/bishboria/.gitignore
+	excludesfile = ~/.gitignore
 [color]
 	ui = true
 [alias]
