@@ -3,3 +3,5 @@
 *.hi
 .DS_Store
 .rvmrc
+\#*#
+.#*
