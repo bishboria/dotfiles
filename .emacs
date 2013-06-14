@@ -47,3 +47,5 @@
  )
 
 (require 'column-marker)
+
+(setq-default show-trailing-whitespace t)
