@@ -18,7 +18,7 @@
                                 (erc :server "irc.freenode.net" :port "6667"
                                      :nick "bishboria")))
 ; join these channels automatically when connecting to freenode
-(setq erc-autojoin-channels-alist '(("freenode.net" "#emacs" "#haskell" "#idris" "#agda" "##logic" "#coq")))
+(setq erc-autojoin-channels-alist '(("freenode.net" "#emacs" "#haskell" "#idris" "#agda" "##logic" "#coq" "##hott")))
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))
 
 (put 'upcase-region 'disabled nil)
