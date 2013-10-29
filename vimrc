@@ -21,18 +21,6 @@ Bundle "https://github.com/altercation/vim-colors-solarized.git"
 
 " Nerd Commenter
 Bundle "https://github.com/vim-scripts/The-NERD-Commenter.git"
-
-" Haskell Template Syntax
-Bundle "https://github.com/pbrisbin/html-template-syntax.git"
-
-" Coq
-Bundle "https://github.com/jvoorhis/coq.vim.git"
-
-" Idris
-Bundle "https://github.com/jhenahan/idris-vim.git"
-
-" tslime
-Bundle "https://github.com/jgdavey/tslime.vim"
 " End vundle bundles
 
 syntax on
@@ -98,4 +86,4 @@ set listchars=tab:->,trail:·,extends:>
 set list!
 "
 " Strip trailing whitespace and autocommit on save mapping
-map <leader>w :%s/\s\+$//e\|w\|!git add . && git commit -m "."<CR><CR>
+"map <leader>w :%s/\s\+$//e\|w\|!git add . && git commit -m "."<CR><CR>
