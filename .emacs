@@ -37,7 +37,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(agda2-include-dirs (quote ("." "/Users/bishboria/Documents/Programming/agda/lib-0.7/src")))
+ '(agda2-include-dirs (quote ("." "/Users/bishboria/Documents/programming/agda/lib-0.7/src")))
  '(display-time-24hr-format t)
  '(haskell-mode-hook (quote (turn-on-haskell-indentation))))
 
