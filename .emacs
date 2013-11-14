@@ -11,7 +11,7 @@
 (global-set-key (kbd "C-<right>") 'windmove-right)
 
 ; Proof General
-(load-file "/usr/local/ProofGeneral/generic/proof-site.el")
+;(load-file "/usr/local/ProofGeneral/generic/proof-site.el")
 
 ; irc
 (global-set-key "\C-ceb" (lambda () (interactive)
