@@ -21,6 +21,9 @@ Bundle "https://github.com/altercation/vim-colors-solarized.git"
 
 " Nerd Commenter
 Bundle "https://github.com/vim-scripts/The-NERD-Commenter.git"
+
+" Git Gutter
+Bundle "https://github.com/airblade/vim-gitgutter.git"
 " End vundle bundles
 
 syntax on
