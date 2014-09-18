@@ -24,6 +24,9 @@ Bundle "https://github.com/vim-scripts/The-NERD-Commenter.git"
 
 " Git Gutter
 Bundle "https://github.com/airblade/vim-gitgutter.git"
+
+" Idris vim
+Bundle "https://github.com/idris-hackers/idris-vim.git"
 " End vundle bundles
 
 syntax on
@@ -83,10 +86,8 @@ set background=light
 colorscheme solarized
 
 let mapleader = ","
+let maplocalleader = g:mapleader
 
 " show trailing spaces
 set listchars=tab:->,trail:·,extends:>
 set list!
-"
-" Strip trailing whitespace and autocommit on save mapping
-"map <leader>w :%s/\s\+$//e\|w\|!git add . && git commit -m "."<CR><CR>
