@@ -7,6 +7,16 @@ hdiutil unmount /Volumes/Emacs
 
 
 
+# Download and install firefox
+ffversion="33.0b9"
+ffurl="http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-beta/mac/en-US/Firefox%20"$ffversion".dmg"
+wget --no-clobber $ffurl &&
+hdiutil mount "Firefox "$ffversion".dmg"
+cp -R /Volumes/Firefox/Firefox.app /Applications &&
+hdiutil unmount /Volumes/Firefox
+
+
+
 # Download and install ghc app
 ghcversion="7.8.3"
 ghcrevision="-r1"
@@ -50,3 +60,4 @@ rm $emacsimage
 rm -rf $ghczip
 rm -rf $ghcapp
 rm Proof-latest.tgz
+rm "Firefox "$ffversion".dmg"
