@@ -11,7 +11,7 @@ hdiutil unmount /Volumes/Emacs
 ffversion="33.0b9"
 ffurl="http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/latest-beta/mac/en-US/Firefox%20"$ffversion".dmg"
 wget --no-clobber $ffurl &&
-hdiutil mount "Firefox "$ffversion".dmg"
+hdiutil mount "Firefox "$ffversion".dmg" &&
 cp -R /Volumes/Firefox/Firefox.app /Applications &&
 hdiutil unmount /Volumes/Firefox
 
@@ -27,6 +27,16 @@ ghclocation=$ghcfolder$ghczip
 wget --no-clobber "https://github.com/ghcformacosx/ghc-dot-app/releases/download/"$ghclocation &&
 unzip -q $ghczip &&
 cp -R $ghcapp /Applications
+
+
+
+# Download and install coq
+coqversion="8.4pl4"
+coqdmg="coqide-"$coqversion".dmg"
+wget --no-clobber "http://coq.inria.fr/distrib/current/files/"$coqdmg &&
+hdiutil mount $coqdmg &&
+cp -R "/Volumes/coqide-"$coqversion"/CoqIde_"$coqversion".app" /Applications/ &&
+hdiutil unmount "/Volumes/coqide-"$coqversion
 
 
 
@@ -61,3 +71,4 @@ rm -rf $ghczip
 rm -rf $ghcapp
 rm Proof-latest.tgz
 rm "Firefox "$ffversion".dmg"
+rm $coqdmg
