@@ -1,13 +1,11 @@
-alias mvim='mvim -v'
-alias vim='mvim -v'
 alias ls='ls -alG'
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 
 export HISTCONTROL=ignoredups
 unset  HISTFILESIZE
 
-export EDITOR=vim
-export GIT_EDITOR=vim
+export EDITOR=emacs
+export GIT_EDITOR=emacs
 export PGHOME=/usr/local/ProofGeneral
 export PS1="\h$ "
 
