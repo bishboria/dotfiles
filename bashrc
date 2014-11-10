@@ -8,15 +8,18 @@ export EDITOR=emacs
 export GIT_EDITOR=emacs
 export PGHOME=/usr/local/ProofGeneral
 export PS1="\h$ "
+export SMLNJ_HOME=/usr/local/smlnj
+export CM_PATHCONFIG=$SMLNJ_HOME/lib/pathconfig
 
 PATH=/usr/local/bin:/usr/local/git/bin:$PATH
-PATH=/usr/local/ProofGeneral/bin:$PATH
+PATH=$PGHOME/bin:$PATH
 PATH=/usr/local/mysql/bin:$PATH
 PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
 PATH=$PATH:/opt/local/bin
 PATH=$HOME/.rbenv/bin:$PATH
 PATH=$PATH:/usr/local/sbin
 PATH=$PATH:/usr/local/packer
+PATH=$PATH:$SMLNJ_HOME/bin
 
 eval "$(rbenv init -)"
 

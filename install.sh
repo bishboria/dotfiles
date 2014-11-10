@@ -9,6 +9,7 @@ wget --no-clobber "https://github.com/ghcformacosx/ghc-dot-app/releases/download
 wget --no-clobber "http://downloads.kitenet.net/git-annex/OSX/current/10.9_Mavericks/git-annex.dmg"
 wget --no-clobber "https://iterm2.com/downloads/stable/iTerm2_v2_0.zip"
 wget --no-clobber "http://www.mendeley.com/client/get/2/"
+wget --no-clobber "http://smlnj.cs.uchicago.edu/dist/working/110.77/smlnj-x86-110.77.pkg"
 wget --no-clobber "http://media.steampowered.com/client/installer/steam.dmg"
 wget --no-clobber "https://www.torproject.org/dist/torbrowser/4.0/TorBrowser-4.0-osx32_en-US.dmg"
 wget --no-clobber "https://transmission.cachefly.net/Transmission-2.84.dmg"
