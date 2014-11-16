@@ -6,8 +6,20 @@
 ; Turn off the menu bar
 (menu-bar-mode -1)
 
-;; Show trailing whitespace. It's bloody annoying.
-(setq-default show-trailing-whitespace t)
+; Turn off scroll bars
+(scroll-bar-mode -1)
+
+(color-theme-initialize)
+(color-theme-solarized-light)
 
 (put 'upcase-region 'disabled nil)
 
+; Show trailing whitespace, empty lines...
+(setq whitespace-style '(face empty tabs lines-tail trailing))
+(global-whitespace-mode t)
+
+; turn tabs into spaces
+(setq-default indent-tabs-mode nil)
+
+; better C-x b/C-x C-f
+(ido-mode t)
