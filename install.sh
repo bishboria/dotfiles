@@ -26,13 +26,5 @@ ln -s ~/.bashrc ~/.bash_profile
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/gitignore ~/.gitignore
 
-ln -s ~/.dotfiles/vimrc ~/.vimrc
-ln -s ~/.dotfiles/gvimrc ~/.gvimrc
 ln -s ~/.dotfiles/emacs ~/.emacs
 ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
-
-
-
-# Get vim plugins
-git clone git://github.com/gmarik/vundle.git ~/.dotfiles/vundle.git
-vim +BundleInstall +qa
