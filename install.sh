@@ -19,6 +19,11 @@ wget --no-clobber "http://www.mirrorservice.org/sites/videolan.org/vlc/2.1.5/mac
 tar xpzf Proof-latest.tgz -C /usr/local
 
 
+# it's quick. sue me.
+brew install mu
+brew install offline-imap
+
+
 
 # Sym link things
 ln -s ~/.dotfiles/bashrc ~/.bashrc
@@ -26,5 +31,6 @@ ln -s ~/.bashrc ~/.bash_profile
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/gitignore ~/.gitignore
 
+ln -s ~/.dotfiles/offlineimaprc ~/.offlineimaprc
 ln -s ~/.dotfiles/emacs ~/.emacs
 ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
