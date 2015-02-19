@@ -13,6 +13,7 @@
 (load-config "init.el")
 (load-config "keybindings.el")
 (load-config "packages.el")
+(load-config "abbreviations.el")
 
 
 ;; Languages

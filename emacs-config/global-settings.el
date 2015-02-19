@@ -1,3 +1,7 @@
+; change theme first
+(color-theme-initialize)
+(color-theme-solarized-light)
+
 (setq inhibit-startup-message t)
 
 ; Turn off the toolbar
@@ -8,9 +12,6 @@
 
 ; Turn off scroll bars
 (scroll-bar-mode -1)
-
-(color-theme-initialize)
-(color-theme-solarized-light)
 
 (put 'upcase-region 'disabled nil)
 

@@ -6,11 +6,13 @@
 (setq mu4e-maildir (expand-file-name "~/.mail/bishboria"))
 (setq mu4e-sent-folder "/[Google Mail].Sent Mail")
 (setq mu4e-drafts-folder "/[Google Mail].Drafts")
+(setq mu4e-trash-folder "/[Google Mail].Bin")
 (setq mu4e-headers-date-format "%Y-%m-%d %H:%M")
 (setq mu4e-view-show-addresses 't)
 (setq mu4e-maildir-shortcuts
       '(("/INBOX" . ?i)
         ("/[Google Mail].Drafts" . ?d)
+        ("/[Google Mail].Bin" . ?b)
         ("/[Google Mail].Sent Mail" . ?s)))
 (setq mu4e-attachment-dir  "~/Downloads")
 (setq message-kill-buffer-on-exit t)

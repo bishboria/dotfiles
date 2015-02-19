@@ -7,11 +7,11 @@ unset  HISTFILESIZE
 export EDITOR=emacs
 export GIT_EDITOR=emacs
 export PGHOME=/usr/local/ProofGeneral
-export PS1="\h$ "
+export PS1="$ "
 export SMLNJ_HOME=/usr/local/smlnj
 export CM_PATHCONFIG=$SMLNJ_HOME/lib/pathconfig
 
-PATH=/usr/local/bin:/usr/local/git/bin:$PATH
+PATH=/usr/local/bin:$PATH
 PATH=$PGHOME/bin:$PATH
 PATH=/usr/local/mysql/bin:$PATH
 PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
