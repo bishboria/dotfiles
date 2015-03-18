@@ -1,7 +1,3 @@
-; change theme first
-(color-theme-initialize)
-(color-theme-solarized-light)
-
 (setq inhibit-startup-message t)
 
 ; Turn off the toolbar
@@ -21,6 +17,3 @@
 
 ; turn tabs into spaces
 (setq-default indent-tabs-mode nil)
-
-; better C-x b/C-x C-f
-(ido-mode t)
