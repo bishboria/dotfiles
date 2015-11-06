@@ -17,3 +17,10 @@
 
 ; turn tabs into spaces
 (setq-default indent-tabs-mode nil)
+
+; better file finder
+; use C-spc to allow filtering of a result set
+(ido-mode t)
+
+; Avoid weird redraw errors
+(add-hook 'isearch-update-post-hook 'redraw-display)

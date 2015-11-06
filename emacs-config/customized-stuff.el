@@ -5,7 +5,8 @@
  ;; If there is more than one, they won't work right.
  '(agda2-include-dirs (quote ("."
                               "/Users/bishboria/Documents/programming/agda/agda-prelude/src"
-                              "/Users/bishboria/Documents/programming/agda/agda-stdlib/src")))
+                            ;;"/Users/bishboria/Documents/programming/agda/agda-stdlib/src"
+                              )))
  '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
  '(visible-bell t)
  '(fringe-mode 0 nil (fringe))
