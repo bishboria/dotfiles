@@ -99,9 +99,6 @@
 (ensure-installed 'idris-mode)
 (add-to-list 'load-path "/Users/bishboria/.emacs.d/idris-mode/")
 
-(setq twelf-root "/Applications/Twelf/")
-(load (concat twelf-root "emacs/twelf-init.el"))
-
 ;; pl is prolog rather than perl, thank you.
 (add-to-list 'auto-mode-alist '("\\.\\(pl\\|pro\\|lgt\\)" . prolog-mode))
 

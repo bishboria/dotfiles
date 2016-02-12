@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mv ~/.spacemacs ~/.spacemacso
+mv ~/.emacso ~/.emacs

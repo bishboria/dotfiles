@@ -31,4 +31,5 @@ ln -s ~/.bashrc ~/.bash_profile
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/gitignore ~/.gitignore
 ln -s ~/.dotfiles/emacs ~/.emacs
+ln -s ~/.dotfiles/spacemacs ~/.spacemacs
 ln -s ~/.dotfiles/vimrc ~/.vimrc
