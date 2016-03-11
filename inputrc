@@ -1,4 +1,2 @@
 set completion-ignore-case on
 set show-all-if-ambiguous on
-set history-size 0
-set skip-completed-text on

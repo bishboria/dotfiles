@@ -1,10 +1,12 @@
 alias ls='ls -alG'
 
-export HISTCONTROL=ignoredups
+export HISTCONTROL=erasedups
+export HISTSIZE=10000 # unlimited
 unset  HISTFILESIZE
+shopt -s histappend
 
 export EDITOR=emacs
-export GIT_EDITOR=emacs
+export GIT_EDITOR=vi
 export PGHOME=/usr/local/ProofGeneral
 export PS1="$ "
 
