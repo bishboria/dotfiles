@@ -13,8 +13,6 @@ brew cask install ghc
 brew cask install git-annex
 brew cask install google-chrome
 brew cask install iterm2
-brew cask install postgres
-brew cask install pg-commander
 brew cask install spideroak
 brew cask install spotify
 brew cask install steam

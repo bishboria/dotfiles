@@ -6,12 +6,9 @@
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/") t)
 (package-initialize)
 
-(defun load-config(name)
-  (load-file (concat "~/.dotfiles/emacs-config/" name)))
-
 ;; emacs' exec-path is the same as $PATH
 ;; osx only?
-(exec-path-from-shell-initialize)
+;(exec-path-from-shell-initialize)
 
 ; Turn off the toolbar
 (tool-bar-mode -1)
@@ -64,9 +61,8 @@
       (package-install p)
       (require p))))
 
-(ensure-installed 'magit)
-(ensure-installed 'column-marker)
 (ensure-installed 'whitespace)
+(ensure-installed 'evil)
 
 ;; handy abbreviations for nerds
 (define-abbrev-table 'global-abbrev-table '(
@@ -96,9 +92,6 @@
    (let ((coding-system-for-read 'utf-8))
      (shell-command-to-string "agda-mode locate"))))
 
-(ensure-installed 'idris-mode)
-(add-to-list 'load-path "/Users/bishboria/.emacs.d/idris-mode/")
-
 ;; pl is prolog rather than perl, thank you.
 (add-to-list 'auto-mode-alist '("\\.\\(pl\\|pro\\|lgt\\)" . prolog-mode))
 
@@ -109,20 +102,34 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(agda2-include-dirs (quote ("."
-                              "/Users/bishboria/Documents/programming/agda/agda-prelude/src"
-                            ;;"/Users/bishboria/Documents/programming/agda/agda-stdlib/src"
-                              )))
- '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
- '(visible-bell t)
+ '(completion-ignored-extensions (quote (".DS_Store" "~" ".glob" ".vo" ".o" ".hi" ".agdai")))
+ '(describe-char-unidata-list
+   (quote
+    (name old-name general-category decomposition titlecase)))
  '(fringe-mode 0 nil (fringe))
- '(completion-ignored-extensions (quote (".DS_Store" "~" ".glob" ".vo" ".o" ".hi"))))
+ '(haskell-mode-hook (quote (turn-on-haskell-indentation)))
+ '(haskell-process-log t)
+ '(package-selected-packages
+   (quote
+    (haskell-mode evil idris-mode column-marker ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe vagrant-tramp vagrant use-package toc-org spacemacs-theme spaceline smooth-scrolling smeargle shm rvm ruby-tools ruby-test-mode rubocop rspec-mode robe reveal-in-osx-finder restclient restart-emacs rbenv rainbow-mode rainbow-identifiers rainbow-delimiters quelpa popwin persp-mode pcre2el pbcopy paradox page-break-lines osx-trash orgit org-repo-todo org-present org-pomodoro org-plus-contrib org-bullets open-junk-file neotree move-text monokai-theme mmm-mode markdown-toc magit-gitflow magit-gh-pulls macrostep lorem-ipsum linum-relative leuven-theme launchctl jabber info+ indent-guide ido-vertical-mode hungry-delete htmlize hl-todo hindent highlight-parentheses highlight-numbers highlight-indentation help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-gitignore helm-flyspell helm-flx helm-descbinds helm-ag haskell-snippets google-translate golden-ratio gnuplot github-clone github-browse-file gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gist ghc gh-md flycheck-pos-tip flycheck-haskell flx-ido fill-column-indicator fancy-battery expand-region exec-path-from-shell evil-visualstar evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-jumper evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-args evil-anzu eval-sexp-fu erc-yt erc-view-log erc-terminal-notifier erc-social-graph erc-image erc-hl-nicks elisp-slime-nav define-word cmm-mode clean-aindent-mode chruby bundler buffer-move bracketed-paste birds-of-paradise-plus-theme auto-highlight-symbol auto-dictionary auto-compile auctex-latexmk aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line)))
+ '(visible-bell t))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :foundry "apple" :family "DejaVu_Sans_Mono"))))
  '(proof-active-area-face ((t (:underline t))))
  '(proof-locked-face ((t (:weight bold)))))
+
+(set-face-attribute 'default nil :font "DejaVu Sans Mono-14")
+(set-frame-font "DejaVu Sans Mono-14" nil t)
+
+(require 'haskell-interactive-mode)
+(require 'haskell-process)
+(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
+
+(add-hook 'agda2-mode-hook
+          '(lambda ()
+            ; If you do not want to use any input method:
+            (deactivate-input-method)))
