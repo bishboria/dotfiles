@@ -1,6 +1,5 @@
-export HISTCONTROL=erasedups
+export HISTCONTROL=ignoreboth
 export HISTSIZE=10000 # unlimited
-export HISTTIMEFORMAT='%F %T '
 unset  HISTFILESIZE
 shopt -s histappend
 
@@ -24,6 +23,8 @@ eval "$(rbenv init -)"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+alias emacs='/Applications/Aquamacs.app/Contents/MacOS/Aquamacs'
 alias emacsd='cd ~/.emacs.d'
 alias phd='cd ~/Documents/programming/phd'
+alias agdad='cd ~/Documents/programming/agda/agda'
 alias ls='ls -alG'
