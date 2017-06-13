@@ -111,10 +111,15 @@
 ;(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 
 (add-hook 'agda2-mode-hook
-	  '(lambda ()
-	    ; If you do not want to use any input method:
-					;(deactivate-input-method)))
-	     ))
+          '(lambda ()
+            ; If you do not want to use any input method:
+            (deactivate-input-method)
+            (define-key agda2-mode-map (kbd "C-c ,") 'agda2-goal-and-context)
+            (define-key agda2-mode-map (kbd "C-c .") 'agda2-goal-and-context-and-inferred)
+            (define-key agda2-mode-map (kbd "C-c =") 'agda2-show-constraints)
+            (define-key agda2-mode-map (kbd "C-c ?") 'agda2-show-goals)
+            (define-key agda2-mode-map (kbd "<backtab>") 'eri-indent-reverse)))
+
 
 (setq mac-allow-anti-aliasing t)
 (setq require-final-newline t)
