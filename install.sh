@@ -3,23 +3,18 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 brew install bash
 brew install the_silver_searcher
-brew install proof-general
 brew install wget
 
 brew cask install divvy
 brew cask install firefox
 brew cask install flux
-brew cask install ghc
-brew cask install git-annex
 brew cask install google-chrome
-brew cask install iterm2
 brew cask install spideroak
 brew cask install spotify
 brew cask install steam
 brew cask install teensy
 brew cask install torbrowser   # easiest way around domain blocking
 brew cask install transmission # to make programs like this useful again
-brew cask install virtualbox
 brew cask install vlc
 
 # Sym link things

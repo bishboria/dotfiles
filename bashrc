@@ -5,18 +5,16 @@ shopt -s histappend
 
 export EDITOR=emacs
 export GIT_EDITOR=vi
-export PGHOME=/usr/local/ProofGeneral
 export PS1="$ "
 
+PATH=$PATH:$HOME/.cabal/bin
 PATH=/usr/local/bin:$PATH
-PATH=$PGHOME/bin:$PATH
 PATH=/usr/local/mysql/bin:$PATH
 PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
 PATH=$PATH:/opt/local/bin
 PATH=$HOME/.rbenv/bin:$PATH
 PATH=$PATH:/usr/local/sbin
 PATH=$PATH:/usr/local/packer
-PATH=$PATH:$HOME/.cabal/bin
 
 eval "$(rbenv init -)"
 
