@@ -9,3 +9,18 @@
 .glob
 *~
 .cm
+
+
+
+# LaTeX ignores
+*.toc
+*.bbl
+*.blg
+*.lof
+*.lot
+*.out
+*.aux
+*.log
+*.dvi
+*.tex~
+*.ps

@@ -33,16 +33,6 @@ set colorcolumn=80
 
 set noswapfile
 
-" disable arrow keys
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-
 " wrapped lines behave normally
 nnoremap j gj
 nnoremap k gk
@@ -60,3 +50,6 @@ let maplocalleader = g:mapleader
 " show trailing spaces
 set listchars=tab:->,trail:·,extends:>
 set list!
+
+colorscheme peachpuff
+set guifont=DejaVuSansMono:h16
