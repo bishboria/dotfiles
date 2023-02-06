@@ -5,10 +5,18 @@
 ;
 
 
-(package-initialize)
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
+(package-initialize)
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(eval-and-compile
+  (setq use-package-always-ensure t
+        use-package-expand-minimally t))
+
 
 ;; Type 'y' or 'n' instead of 'yes' or 'no'
 (defalias 'yes-or-no-p 'y-or-n-p)

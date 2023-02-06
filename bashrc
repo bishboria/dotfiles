@@ -13,10 +13,6 @@ export CPPFLAGS="-I/usr/local/opt/icu4c/include"
 
 PATH=$PATH:$HOME/.cabal/bin
 PATH=/usr/local/bin:$PATH
-PATH=/usr/local/mysql/bin:$PATH
-PATH=$PATH:/opt/local/bin
-PATH=$PATH:/usr/local/sbin
-PATH=$PATH:/usr/local/packer
 
 ### Added by the Heroku Toolbelt
 ### leave here in case I need to edit company websites, or whatever
@@ -27,7 +23,6 @@ alias emacsd='cd ~/.emacs.d'
 alias phd='cd ~/Documents/programming/phd'
 alias agdad='cd ~/Documents/programming/agda/agda'
 alias ls='ls -alG'
-alias okular='open /usr/local/Cellar/okular/19.12.3/bin/okular.app'
 
 
 # add identities to agent from keychain
